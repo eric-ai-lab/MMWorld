@@ -7,8 +7,8 @@
 
 <sup style="color: #FFB6C1;">*</sup>Equal contribution
 
-<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> 
-![Teaser figure](figures/teaser-arxiv.png)
+<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> [**🤗 Dataset**](https://huggingface.co/datasets/Xuehai/MMWorld) 
+![Teaser figure](figures/teaser.png)
 
 
 ## TODO
@@ -19,6 +19,11 @@
 ## :fire: News
 * **[2024.06.12]** We release our dataset.
 
+
+
+## License Agreement
+Please refer to [LICENSE](./LICENSE.md).
+All videos of the MMworld benchmark are obtained from the Internet which are not property of our institutions. The copyright remains with the original owners of the video.
 
 
 ## Citation
