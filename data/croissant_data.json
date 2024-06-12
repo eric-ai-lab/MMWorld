@@ -1,0 +1,292 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "mmworld",
+  "description": "Dataset containing video IDs, URLs, disciplines, subdisciplines, captions, and questions for various videos.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://mmworld-bench.github.io/",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "mmworld",
+      "name": "mmworld.json",
+      "description": "Dataset containing video IDs, URLs, disciplines, subdisciplines, captions, and questions.",
+      "contentUrl": "mmworld.json",
+      "encodingFormat": "application/json",
+      "sha256": "658ed65e043b845be1adce62f995d4fd85b610eeee911d2d2b6ebf78e82b1f5a"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "video_metadata",
+      "name": "Video Metadata",
+      "description": "Metadata for each video.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "video_id",
+          "name": "video_id",
+          "description": "The video ID.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].video_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "video_url",
+          "name": "video_url",
+          "description": "The video URL.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].video_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "discipline",
+          "name": "discipline",
+          "description": "The discipline.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].discipline"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "subdiscipline",
+          "name": "subdiscipline",
+          "description": "The subdiscipline.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].subdiscipline"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "captions",
+          "name": "captions",
+          "description": "The video captions.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].captions"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "questions",
+      "name": "Questions",
+      "description": "Questions associated with the videos.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "type",
+          "name": "type",
+          "description": "The type of question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "question",
+          "name": "question",
+          "description": "The question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].question"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "options",
+          "name": "options",
+          "description": "The options for the question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].options"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "answer",
+          "name": "answer",
+          "description": "The correct answer for the question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].answer"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "requires_domain_knowledge",
+          "name": "requires_domain_knowledge",
+          "description": "Whether the question requires domain knowledge.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].requires_domain_knowledge"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "requires_audio",
+          "name": "requires_audio",
+          "description": "Whether the question requires audio.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].requires_audio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "requires_visual",
+          "name": "requires_visual",
+          "description": "Whether the question requires visual.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].requires_visual"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "question_only",
+          "name": "question_only",
+          "description": "Whether the question is a question-only type.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].question_only"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "correct_answer_label",
+          "name": "correct_answer_label",
+          "description": "The label of the correct answer.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "mmworld"
+            },
+            "extract": {
+              "jsonPath": "$[*].questions[*].correct_answer_label"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

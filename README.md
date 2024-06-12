@@ -7,18 +7,17 @@
 
 <sup style="color: #FFB6C1;">*</sup>Equal contribution
 
-[[Project Page](https://mmworld-bench.github.io/)] 
-[[Paper]()]
+<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> 
 ![Teaser figure](figures/teaser-arxiv.png)
 
 
 ## TODO
 - [ ] Release dataset
-- [ ] EvalAI server setup
 - [ ] Release evaluation code  
+- [ ] EvalAI server setup
 
 ## :fire: News
-* **[2024.06.11]** We release our dataset.
+* **[2024.06.12]** We release our dataset.
 
 
 
