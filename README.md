@@ -7,12 +7,12 @@
 
 <sup style="color: #FFB6C1;">*</sup>Equal contribution
 
-<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> [**🤗 Dataset**](https://huggingface.co/datasets/Xuehai/MMWorld) 
+<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a>
 ![Teaser figure](figures/teaser.png)
 
 
 ## TODO
-- [ ] Release dataset
+- [x] Release dataset
 - [ ] Release evaluation code  
 - [ ] EvalAI server setup
 
@@ -21,9 +21,58 @@
 
 
 
+## Dataset Structure
+The dataset can be downloaded from Huggingface.
+Each entry in the dataset contains the following fields:
+- `video_id`: Unique identifier for the video. Same as the relative path of the downloaded video
+- `video_url`: URL of the video
+- `discipline`: Main discipline of the video content
+- `subdiscipline`: Sub-discipline of the video content
+- `captions`: List of captions describing the video content
+- `questions`: List of questions related to the video content, each with options and correct answer
+
+
+## Example Entry
+
+```json
+{
+  "video_id": "eng_vid1",
+  "video_url": "https://youtu.be/-e1_QhJ1EhQ",
+  "discipline": "Tech & Engineering",
+  "subdiscipline": "Robotics",
+  "captions": [
+    "The humanoid robot Atlas interacts with objects and modifies the course to reach its goal."
+  ],
+  "questions": [
+    {
+      "type": "Explanation",
+      "question": "Why is the engineer included at the beginning of the video?",
+      "options": {
+        "a": "The reason might be to imply the practical uses of Atlas in a commercial setting, to be an assistant who can perform complex tasks",
+        "b": "To show how professional engineers can be forgetful sometimes",
+        "c": "The engineer is controlling the robot manually",
+        "d": "The engineer is instructing Atlas to build a house"
+      },
+      "answer": "The reason might be to imply the practical uses of Atlas in a commercial setting, to be an assistant who can perform complex tasks",
+      "requires_domain_knowledge": false,
+      "requires_audio": false,
+      "requires_visual": true,
+      "question_only": false,
+      "correct_answer_label": "a"
+    }
+  ]
+}
+```
+
+
+## Evaluation
+To be released soon.
+
+
 ## License Agreement
 Please refer to [LICENSE](./LICENSE.md).
 All videos of the MMworld benchmark are obtained from the Internet which are not property of our institutions. The copyright remains with the original owners of the video.
+Should you encounter any data samples violating the copyright or licensing regulations of any site, please contact us. Upon verification, those samples will be promptly removed.
 
 
 ## Citation
