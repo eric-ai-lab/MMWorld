@@ -7,7 +7,7 @@
 
 <sup style="color: #FFB6C1;">*</sup>Equal contribution
 
-<a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a>
+<a href='https://arxiv.org/abs/2406.08407'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a>
 ![Teaser figure](figures/teaser.png)
 
 
@@ -77,4 +77,12 @@ Should you encounter any data samples violating the copyright or licensing regul
 
 ## Citation
 ```
+@misc{he2024mmworld,
+      title={MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos}, 
+      author={Xuehai He and Weixi Feng and Kaizhi Zheng and Yujie Lu and Wanrong Zhu and Jiachen Li and Yue Fan and Jianfeng Wang and Linjie Li and Zhengyuan Yang and Kevin Lin and William Yang Wang and Lijuan Wang and Xin Eric Wang},
+      year={2024},
+      eprint={2406.08407},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
