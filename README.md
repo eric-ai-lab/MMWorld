@@ -22,7 +22,7 @@
 
 
 ## Dataset Structure
-The dataset can be downloaded from Huggingface.
+The dataset can be downloaded from Hugging Face.
 Each entry in the dataset contains the following fields:
 - `video_id`: Unique identifier for the video. Same as the relative path of the downloaded video
 - `video_url`: URL of the video
