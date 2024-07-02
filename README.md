@@ -13,7 +13,7 @@
 
 ## TODO
 - [x] Release dataset
-- [ ] Release evaluation code  
+- [x] Release evaluation code  
 - [ ] EvalAI server setup
 
 ## :fire: News
@@ -66,7 +66,33 @@ Each entry in the dataset contains the following fields:
 
 
 ## Evaluation
-To be released soon.
+
+You can do evaluation by running our evaluation code [eval.py](evaluation/eval.py). Note that access to the GPT-4 API is required, as defined in line 387 of `eval.py`.
+To use our example evaluation code, you need to define your model initialization function, such as:
+```python
+modelname_init()
+```
+at line 357 of eval.py, and the model answer function, such as:
+```python
+modelname_answer()
+``` 
+at line 226 of eval.py.
+
+Alternatively, you may prepare your model results and submit them to the EvalAI server. The model results format should be as follows:
+
+```json
+{
+    "detailed_results": [
+        {
+            "video_id": "eng_vid1",
+            "model_answer": "a</s>",
+        },
+        ...
+    ]
+}
+```
+
+
 
 
 ## License Agreement
