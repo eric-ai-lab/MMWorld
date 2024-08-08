@@ -7,16 +7,18 @@
 
 <sup style="color: #FFB6C1;">*</sup>Equal contribution
 
-<a href='https://arxiv.org/abs/2406.08407'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a>
+<a href='https://arxiv.org/abs/2406.08407'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a> <a href='https://eval.ai/web/challenges/challenge-page/2359'><img src='https://img.shields.io/badge/EvalAI-Challenge-orange'></a>
+
 ![Teaser figure](figures/teaser.png)
 
 
 ## TODO
 - [x] Release dataset
 - [x] Release evaluation code  
-- [ ] EvalAI server setup
+- [x] EvalAI server setup
 
 ## :fire: News
+* **[2024.08.9]** We set up the EvalAI server. The portal will open for submissions soon.
 * **[2024.07.1]** We add the evaluation toolkit.
 * **[2024.06.12]** We release our dataset.
 
