@@ -16,7 +16,7 @@
 - [x] Release dataset
 - [x] Release evaluation code  
 - [x] EvalAI server setup
-- [ ] Huggingface server setup
+- [ ] Hugging Face server setup
 - [ ] Support evaluation with lmms-eval
 
 ## :fire: News
