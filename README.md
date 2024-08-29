@@ -17,6 +17,7 @@
 - [x] Release evaluation code  
 - [x] EvalAI server setup
 - [ ] Huggingface server setup
+- [ ] Support evaluation with lmms-eval
 
 ## :fire: News
 * **[2024.08.9]** We set up the EvalAI server. The portal will open for submissions soon.
