@@ -7,7 +7,9 @@
 
 <sup style="color: #FFB6C1;">*</sup>Equal contribution
 
-<a href='https://arxiv.org/abs/2406.08407'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a> <a href='https://eval.ai/web/challenges/challenge-page/2359'><img src='https://img.shields.io/badge/EvalAI-Challenge-orange'></a>
+<a href='https://arxiv.org/abs/2406.08407'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://mmworld-bench.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/Xuehai/MMWorld'><img src='https://img.shields.io/badge/🤗-Dataset-blue'></a> <a href='https://eval.ai/web/challenges/challenge-page/2359'><img src='https://img.shields.io/badge/EvalAI-Challenge-orange'>
+<a href='https://huggingface.co/spaces/Xuehai/MMWorld'><img src='https://img.shields.io/badge/Space-HuggingFace-yellow'>
+</a>
 
 ![Teaser figure](figures/teaser.png)
 
@@ -16,7 +18,7 @@
 - [x] Release dataset
 - [x] Release evaluation code  
 - [x] EvalAI server setup
-- [ ] Hugging Face server setup
+- [x] Hugging Face server setup
 - [ ] Support evaluation with lmms-eval
 
 ## :fire: News
