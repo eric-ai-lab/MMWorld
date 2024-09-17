@@ -22,6 +22,7 @@
 - [ ] Support evaluation with lmms-eval
 
 ## :fire: News
+* **[2024.09.17]** We set up the Hugging Face server.
 * **[2024.08.9]** We set up the EvalAI server. The portal will open for submissions soon.
 * **[2024.07.1]** We add the evaluation toolkit.
 * **[2024.06.12]** We release our dataset.
