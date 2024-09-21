@@ -19,9 +19,10 @@
 - [x] Release evaluation code  
 - [x] EvalAI server setup
 - [x] Hugging Face server setup
-- [ ] Support evaluation with lmms-eval
+- [x] Support evaluation with lmms-eval
 
 ## :fire: News
+* **[2024.09.21]** We integrate the benchmark into lmms-eval.
 * **[2024.09.17]** We set up the Hugging Face server.
 * **[2024.08.9]** We set up the EvalAI server. The portal will open for submissions soon.
 * **[2024.07.1]** We add the evaluation toolkit.
