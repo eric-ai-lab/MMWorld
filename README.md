@@ -22,6 +22,7 @@
 - [x] Support evaluation with lmms-eval
 
 ## :fire: News
+* **[2025.07.14]** We integrate the benchmark into [AGI-Eval](https://agi-eval.cn/evaluation/detail?id=66) platform. More models and results will be updated there.
 * **[2024.09.21]** We integrate the benchmark into lmms-eval.
 * **[2024.09.17]** We set up the Hugging Face server.
 * **[2024.08.9]** We set up the EvalAI server. The portal will open for submissions soon.
